@@ -41,8 +41,6 @@ class AndroidDeveloper(SoftwareEngineer):
 
 
 class FullStackDeveloper(BackendDeveloper, FrontendDeveloper):
-    # no __init__ override — parent/MRO handles initialization correctly
-
     def create_web_application(self) -> None:
         print(f"{self.name} started creating a web application...")
         self.create_powerful_api()
